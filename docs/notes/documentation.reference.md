@@ -2,9 +2,15 @@
 id: 9be339xpll091md5sjmsgsz
 title: Documentation reference
 desc: ''
-updated: 1684646837538
+updated: 1684647830731
 created: 1684644951822
 ---
+<details>
+    <summary>SolidJS</summary>
+
+![[documentation.reference.solidJS]]
+</details>
+
 <details>
     <summary>Dendron</summary>
 

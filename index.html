@@ -5,22 +5,48 @@
     <title>Word Spinner</title>
 </head>
 <body>
-Word spinner server index.html content
+Word spinner server index html content
 <div id="counter"></div>
-<script type="module">
+<script type="module" async defer>
 
-import { createSignal, onCleanup } from "https://cdn.skypack.dev/solid-js";
-import { render, hydrate } from "https://cdn.skypack.dev/solid-js/web";
-import html from "https://cdn.skypack.dev/solid-js/html";
+import { createSignal, onCleanup } from 'https://cdn.skypack.dev/solid-js'
+import { render, hydrate } from 'https://cdn.skypack.dev/solid-js/web'
+import html from 'https://cdn.skypack.dev/solid-js/html'
+import { I18nContext, createI18nContext, useI18n } from 'https://cdn.skypack.dev/@solid-primitives/i18n'
+
+//import NavBar from 'components/NavBar.js'
+
+const dict = {
+    fr: {
+      seconds: "secondes",
+    },
+    es: {
+      seconds: "segundos"
+    },
+    en: {
+      seconds: "seconds",
+    },
+  },
+  [ t ] = createI18nContext(dict, navigator.language.substring(0,2))
+
+/*const I18nProvider = props => {
+  const value = 
+  //return html`<I18nContext.Provider value={value}>{props.children}</I18nContext.Provider>`
+  return I18nContext.Provider({ value, children: props.children })
+}*/
 
 const Counter = () => {
+    //console.debug(useI18n.toString(), useI18n())
+    //const [t] = useI18n(),
     const [count, setCount] = createSignal(0),
-        timer = setInterval(() => setCount(count() + 1), 1000);
-    onCleanup(() => clearInterval(timer));
-    //return count;
-    return html`${count}`;
-};
-render(Counter, document.querySelector('#counter'));
+        timer = setInterval(() => setCount(count() + 1), 1000)
+    onCleanup(() => clearInterval(timer))
+    return html`<I18nContext.Provider value="{i18n}">${count} ${t('seconds')}</I18nContext.Provider>`
+    //return html`<I18nProvider dict="dict" locale="es">${count} ${t('seconds')}</I18nProvider>`
+    //return I18nProvider({ dict, locale: 'es', children: [count, t('seconds')] })
+}
+
+render(Counter, document.querySelector('#counter'))
 
 </script>
 </body>

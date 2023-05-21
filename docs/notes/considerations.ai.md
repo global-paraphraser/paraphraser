@@ -1,6 +1,6 @@
 ---
 id: txpvo013t39xw2eqaabeg4k
-title: AI considerations
+title: Ai
 desc: ''
 updated: 1684640637235
 created: 1684639826745
