@@ -5,6 +5,23 @@
     <title>Word Spinner</title>
 </head>
 <body>
-    Word spinner server index.html content
+Word spinner server index.html content
+<div id="counter"></div>
+<script type="module">
+
+import { createSignal, onCleanup } from "https://cdn.skypack.dev/solid-js";
+import { render, hydrate } from "https://cdn.skypack.dev/solid-js/web";
+import html from "https://cdn.skypack.dev/solid-js/html";
+
+const Counter = () => {
+    const [count, setCount] = createSignal(0),
+        timer = setInterval(() => setCount(count() + 1), 1000);
+    onCleanup(() => clearInterval(timer));
+    //return count;
+    return html`${count}`;
+};
+render(Counter, document.querySelector('#counter'));
+
+</script>
 </body>
 </html>

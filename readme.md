@@ -7,8 +7,6 @@ created: 1684635643730
 ---
 # Word Spinner server
 
-The [VS Code](https://code.visualstudio.com/) extension [Dendron](https://wiki.dendron.so/) is recommended for viewing the [docs](docs) directory.
-
-### Tech stack
-
-Currently: PHP
+## Documentation
+### Viewing local documentation
+The [VS Code](https://code.visualstudio.com/) extension [Dendron](https://wiki.dendron.so/) is recommended for viewing the [docs](docs/notes/root.md) directory and all .md files.
