@@ -30,28 +30,6 @@ body { margin: 0; }
 }
 
 
-
-/*
-# Themes
-*/
-
-.themed_container {
-  background-color: var(--bg-color);
-  color: var(--font-color);
-  --bg-color: #222;
-  --font-color: #ddd;
-}
-
-#dark_theme { display: none; }
-#dark_theme:checked + * {
-  --bg-color: #444;
-  --font-color: #ddd;
-  background-color: var(--bg-color);
-  color: var(--font-color);
-}
-
-
-
 /*
 # Base
 */
@@ -77,9 +55,6 @@ body { margin: 0; }
 #header {
   grid-area: header;
   display: grid;
-  grid-auto-columns: minmax(300px, 1fr);
-  grid-auto-flow: dense;
-  grid-auto-rows: 3em;
   /* align-items: center; */
   /* grid-gap: 3em; */
   /* grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); */
@@ -89,11 +64,12 @@ body { margin: 0; }
   /* grid-template-columns: auto 1fr; */
   /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+  grid-auto-columns: minmax(300px, 1fr);
+  grid-auto-flow: dense;
+  /* grid-auto-rows: 3em; */
   /* justify-content: end; */
   /* justify-content: space-between; */
-/*
   justify-items: end;
-*/
 }
 
 #header #site_logo {
@@ -110,13 +86,9 @@ body { margin: 0; }
 
 #header nav {
   display: grid;
-/*
-  grid-template-columns: repeat(4, );
-*/
-  grid-auto-columns: minmax(100px, auto);
-  grid-auto-flow: dense;
-  grid-template-rows: 3em;
   align-items: center;
+  grid-template-columns: repeat(4, minmax(auto, 1fr));
+  grid-template-rows: 3em;
   /* width: 500px; */
   /* justify-self: end; */
   /* height: 100%; */
@@ -126,7 +98,6 @@ body { margin: 0; }
   /* grid-template: 3em / repeat(minmax(10rem, 1fr)); */
 }
 #header nav a {
-  max-width: fit-content;
   margin: 0 1rem;
   text-align: center;
 }
@@ -146,4 +117,25 @@ body { margin: 0; }
 
 #footer .toggle_dark_theme {
   text-align: right;
+}
+
+
+
+/*
+# Dark theme
+*/
+
+.themed_container {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  --bg-color: #222;
+  --font-color: #ddd;
+}
+
+#dark_theme { display: none; }
+#dark_theme:checked + * {
+  --bg-color: #444;
+  --font-color: #ddd;
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
