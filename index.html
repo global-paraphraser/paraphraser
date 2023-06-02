@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
-    <title>Word Spinner</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Word Spinner</title>
+  <link href="/style/index.css" rel="stylesheet" />
+  <script src="/script/index.js" type="module" async defer></script>
+  <script src="/script/dark_theme.js" type="module" async defer></script>
 </head>
 <body>
-Word spinner server index html content
-<div id="counter"></div>
-<script type="module" async defer>
+<input id="dark_theme" type="checkbox">
+<div class="themed_container">
 
-import { createSignal, onCleanup } from 'https://cdn.skypack.dev/solid-js'
-import { render, hydrate } from 'https://cdn.skypack.dev/solid-js/web'
-import html from 'https://cdn.skypack.dev/solid-js/html'
-import { I18nContext, createI18nContext, useI18n } from 'https://cdn.skypack.dev/@solid-primitives/i18n'
+  <header id="header">
+    <img id="site_logo" src="assets/site_logo.png">
+    <nav>
+      <a href="#how_it_works">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="/login">Log in</a>
+      <a href="/register">Register</a>
+    </nav>
+  </header>
 
-//import NavBar from 'components/NavBar.js'
+  <main>
+    
+    <header>
+      <div>Hoop is Original!</div>
+      <span>It saves you time</span>
+    </header>
 
-const dict = {
-    fr: {
-      seconds: "secondes",
-    },
-    es: {
-      seconds: "segundos"
-    },
-    en: {
-      seconds: "seconds",
-    },
-  },
-  [ t ] = createI18nContext(dict, navigator.language.substring(0,2))
+    <form>
+      Primary form goes here
+    </form>
 
-/*const I18nProvider = props => {
-  const value = 
-  //return html`<I18nContext.Provider value={value}>{props.children}</I18nContext.Provider>`
-  return I18nContext.Provider({ value, children: props.children })
-}*/
+    <article id="how_it_works">
+      How it works goes here
+    </article>
 
-const Counter = () => {
-    //console.debug(useI18n.toString(), useI18n())
-    //const [t] = useI18n(),
-    const [count, setCount] = createSignal(0),
-        timer = setInterval(() => setCount(count() + 1), 1000)
-    onCleanup(() => clearInterval(timer))
-    return html`<I18nContext.Provider value="{i18n}">${count} ${t('seconds')}</I18nContext.Provider>`
-    //return html`<I18nProvider dict="dict" locale="es">${count} ${t('seconds')}</I18nProvider>`
-    //return I18nProvider({ dict, locale: 'es', children: [count, t('seconds')] })
-}
+    <article id="pricing">
+      Pricing goes here
+    </article>
 
-render(Counter, document.querySelector('#counter'))
+  </main>
 
-</script>
+  <footer id="footer">
+    <a>Terms</a>
+    <a>© 2023</a>
+    <label id="toggle_dark_theme" for="dark_theme">
+      <a class="light">☼</a>
+      <a class="dark">☾</a>
+    </label>
+  </footer>
+
+</div>
+
 </body>
 </html>
