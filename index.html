@@ -10,16 +10,21 @@
   <script src="/script/dark_theme.js" type="module" async defer></script>
   
 </head>
-<body>
-
-<input id="dark_theme" type="checkbox">
+<body id="app" class="themed_container">
+<!--
 <div id="app" class="themed_container">
+-->
 
   <header id="header">
     <img id="site_logo" src="assets/site_logo.png">
+    <header>
+      <div>Hoop is Original!</div>
+      <span>It saves you time</span>
+    </header>
     <nav>
       <a href="#how_it_works">How it works</a>
       <a href="#pricing">Pricing</a>
+      <a href="#about">About us</a>
       <a href="/login">Log in</a>
       <a href="/register">Register</a>
     </nav>
@@ -47,15 +52,22 @@
   </main>
 
   <footer id="footer">
-    <a>Terms</a>
+    <span>
+      <a href="/terms">Terms</a>
+      &
+      <a href="/privacy">Privacy</a>
+    </span>
     <a class="copyright_link">© 2023</a>
-    <label id="toggle_dark_theme" for="dark_theme">
+    <label class="toggle_dark_theme" for="dark_theme">
+      <input id="dark_theme" type="checkbox">
       <a class="light">☼</a>
       <a class="dark">☾</a>
     </label>
   </footer>
 
+<!--
 </div>
+-->
 
 </body>
 </html>
