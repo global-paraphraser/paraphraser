@@ -38,7 +38,9 @@ body {
 # Themes
 */
 
+/*
 #dark_theme { display: none; }
+*/
 #dark_theme:not(:checked) ~ .dark { display: none; }
 #dark_theme:checked ~ .light { display: none; }
 
@@ -116,6 +118,9 @@ body {
 */
   /* justify-content: space-between; */
 }
+#header > :not(:first-child) {
+  margin-left: auto;
+}
 
 #header #site_logo {
 /*
@@ -130,16 +135,13 @@ body {
 ## Navigation bar
 */
 
-#header > header {
-  margin: auto;
-}
-
 #header nav {
-  min-width: fit-content;
-  margin-left: auto;
-/*
   display: flex;
-*/
+  min-width: fit-content;
+  flex-flow: wrap;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 /*
   display: grid;
   grid-template: 3em / repeat(4, minmax(10rem, auto));
@@ -149,9 +151,7 @@ body {
 */
 }
 #header nav a {
-/*
-  max-width: fit-content;
-*/
+  min-width: max-content;
   margin: 0 1rem;
   text-align: center;
 }
