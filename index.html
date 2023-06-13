@@ -12,16 +12,18 @@
 -->
   
 </head>
-<body id="app" class="themed_container">
-<!--
-<div id="app" class="themed_container">
--->
+<body>
+
+<input id="theme_toggle" type="checkbox">
+
+<div id="app" class="themed">
 
   <header id="header">
     <img id="site_logo" src="assets/site_logo.png">
-    <section id="catchphrase">
-      <div>Hoop is Original!</div>
-      <span>It saves you time</span>
+    <section id="header_text">
+      <strong>Hoop is Original!</strong>
+      <br>
+      <small>It saves you time</small>
     </section>
     <nav>
       <a href="#how_it_works">How it works</a>
@@ -60,16 +62,13 @@
       <a href="/privacy">Privacy</a>
     </span>
     <a class="copyright_link">© 2023</a>
-    <label class="toggle_dark_theme" for="dark_theme">
-      <input id="dark_theme" type="checkbox">
-      <a class="light">☼</a>
-      <a class="dark">☾</a>
+    <label class="theme_toggle" for="theme_toggle">
+      <a class="theme_light">☼</a>
+      <a class="theme_dark">☾</a>
     </label>
   </footer>
 
-<!--
 </div>
--->
 
 </body>
 </html>
