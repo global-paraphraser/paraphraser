@@ -1,3 +1,3 @@
 # Word Spinner server
 
-[Documentation](docs/root.md)
+[Documentation](docs/readme.md)
