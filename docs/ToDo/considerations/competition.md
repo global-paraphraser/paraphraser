@@ -1,4 +1,4 @@
-[root](../../root.md)/[ToDo](../ToDo.md)/[considerations](considerations.md)/
+[docs](../../docs.md)/[ToDo](../ToDo.md)/[considerations](considerations.md)/
 
 # Competition
 
