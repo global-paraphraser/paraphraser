@@ -1,3 +1,7 @@
+[docs](../../readme.md.md)/[ToDo](../ToDo.md)/[considerations](considerations.md)/
+
+---
+
 # AI
 
 #### Options:
