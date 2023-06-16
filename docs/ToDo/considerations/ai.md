@@ -4,7 +4,8 @@
 
 # AI
 
-#### Options:
+## Options:
+
 - [Google Bard](https://bard.google.com)
 - [OpenAI GPT-4](https://chat.openai.com/)
 - [HuggingFace OpenAssistant](https://huggingface.co/chat/)
