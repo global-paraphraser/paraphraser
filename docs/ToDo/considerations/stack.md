@@ -1,18 +1,9 @@
+[docs](../../readme.md)/[ToDo](../readme.md)/[considerations](readme.md)/
+
 ---
-id: icvdtydlrb7ldlfy781lk3d
-title: Stack
-desc: ''
-updated: 1684647915283
-created: 1684647764592
----
-<details>
-    <summary>client</summary>
 
-![[considerations.stack.client]]
-</details>
+# Stack considerations
 
-<details>
-    <summary>server</summary>
+[Server(stack.server.md)
 
-![[considerations.stack.client]]
-</details>
+[Client](stack.client.md)

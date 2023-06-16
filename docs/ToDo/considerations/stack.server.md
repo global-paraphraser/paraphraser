@@ -1,12 +1,13 @@
+[docs](../../readme.md)/[ToDo](../readme.md)/[considerations](readme.md)/
+
 ---
-id: itfdd4tsb6ilxo5mrfh1om8
-title: Server stack considerations
-desc: ''
-updated: 1684646706856
-created: 1684646670693
----
+
+# Server stack considerations
+
 Current: [PHP](https://php.net)
-#### Options
+
+## Options
+
 - [WebAssembly](https://wasmer.io/)
 - [Rust](https://www.rust-lang.org/)
 - [Zig](https://ziglang.org/)

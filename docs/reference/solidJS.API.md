@@ -1,10 +1,9 @@
+[docs](../readme.md)/[reference](readme.md)/
+
 ---
-id: z0dnocqdso8wgp5pfsgsgfy
-title: SolidJS API
-desc: ''
-updated: 1684648001366
-created: 1684648001366
----
+
+# SolidJS API
+
 # Basic Reactivity
 
 Solid's overall approach to reactivity is to wrap any reactive computation in

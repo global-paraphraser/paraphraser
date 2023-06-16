@@ -1,8 +1,10 @@
+[docs](../readme.md)/
+
+---
+
 # ToDo
 
-git remote add origin https://github.com/global-paraphraser/paraphraser.git
-git branch -M main
-git push -u origin main
+[Considerations](considerations/readme.md)
 
 - [x] layout
 - [x] light theme
@@ -11,7 +13,3 @@ git push -u origin main
 - [x] back-end
 - [ ] i18n
 - [ ] payments
-
-## Related
-
-[Considerations](considerations/considerations.md)

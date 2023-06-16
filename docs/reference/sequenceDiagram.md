@@ -1,10 +1,9 @@
+[docs](../readme.md)/[reference](readme.md)/
+
 ---
-id: fkr4hvmcud8nz36qhxi6c60
-title: Sequence diagram documentation reference
-desc: ''
-updated: 1684645862769
-created: 1684645565442
----
+
+# Sequence diagram
+
 ```mermaid
 sequenceDiagram
     participant Alice

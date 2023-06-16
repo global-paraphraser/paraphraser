@@ -1,10 +1,9 @@
+[docs](../readme.md)/[reference](readme.md)/
+
 ---
-id: 8sil5ve956tg3inhkr7ikpq
-title: Flow charts documentation reference 
-desc: ''
-updated: 1684645848420
-created: 1684645001401
----
+
+# Flow charts
+
 ```mermaid
 graph TD;
     A-->B;

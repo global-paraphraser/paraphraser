@@ -1,5 +1,5 @@
 # Docs Root
 
-[ToDo](ToDo/ToDo.md)
+[ToDo](ToDo/readme.md)
 
-[reference](reference/reference.md)
+[reference](reference/readme.md)
