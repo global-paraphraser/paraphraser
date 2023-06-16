@@ -7,9 +7,6 @@
   <title>Word Spinner</title>
   <link href="/style/index.css" rel="stylesheet" />
   <script src="/script/index.js" type="module" async defer></script>
-<!--
-  <script src="/script/dark_theme.js" type="module" async defer></script>
--->
   
 </head>
 <body>
@@ -18,54 +15,96 @@
 
 <div id="app" class="themed">
 
-  <header id="header">
-    <img id="site_logo" src="assets/site_logo.png">
+  <header id="header" class="bg-frosted">
+    
+    <a href="/" class="pad0">
+      <img id="site_logo" src="assets/site_logo.png">
+    </a>
+    
     <section id="header_text">
       <strong>Hoop is Original!</strong>
       <br>
       <small>It saves you time</small>
     </section>
+    
     <nav>
       <a href="#how_it_works">How it works</a>
       <a href="#pricing">Pricing</a>
       <a href="#about">About us</a>
       <a href="/login">Log in</a>
       <a href="/register">Register</a>
-<!--
-      <a href="#how_it_works">How it works</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#about">About us</a>
--->
     </nav>
+    
   </header>
 
   <main>
 
-    <form>
-      Primary form goes here
+    <form class="grid-2-col bg-frosted">
+      
+      <label>
+        <div>Input text</div>
+        <textarea name="text_input" placeholder="Please paste the text you want to be customized here and click the 'customize' button below. The customized text will soon appear in the 'result text' box. (Try for free up to 250 words)"></textarea>
+      </label>
+      
+      <label>
+        <div>Result text (concise)</div>
+        <textarea name="text_output"></textarea>
+      </label>
+    
+      <fieldset>
+        <button>
+          <label>
+            <input name="file_input" title="Upload file" type="file">
+            Upload file
+          </label>
+        </button>
+        <button>Originalize</button>
+      </fieldset>
+      
+      <fieldset>
+        <button>Copy</button>
+        <select autocomplete="off">
+          <option default>Download...</option>
+          <option>.txt</option>
+          <option>.doc</option>
+        </select>
+      </fieldset>
+      
     </form>
 
-    <article id="how_it_works">
+    <article id="how_it_works" class="bg-frosted">
       How it works goes here
     </article>
 
-    <article id="pricing">
+    <article id="pricing" class="bg-frosted">
       Pricing goes here
+    </article>
+
+    <article id="stats" class="bg-frosted">
+      Statistics go here
     </article>
 
   </main>
 
-  <footer id="footer">
-    <span>
+  <footer id="footer" class="bg-frosted">
+    
+    <section>
       <a href="/terms">Terms</a>
       &
       <a href="/privacy">Privacy</a>
-    </span>
-    <a class="copyright_link">© 2023</a>
-    <label class="theme_toggle" for="theme_toggle">
-      <a class="theme_light">☼</a>
-      <a class="theme_dark">☾</a>
-    </label>
+    </section>
+    
+    <section>
+      <a href="/copyright">© 2023</a>
+    </section>
+    
+    <section>
+      <label for="theme_toggle">
+        <a class="theme_light">☼</a>
+        <a class="theme_dark">☾</a>
+      </label>
+    </section>
+    
   </footer>
 
 </div>
