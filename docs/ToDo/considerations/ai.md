@@ -1,4 +1,4 @@
-[docs](../../readme.md)/[ToDo](../ToDo.md)/[considerations](considerations.md)/
+[docs](../../readme.md)/[ToDo](../readme.md)/[considerations](readme.md)/
 
 ---
 
