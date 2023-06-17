@@ -1,3 +1,3 @@
 # Word Paraphraser server
 
-[Documentation](docs/readme.md)
+[Documentation](docs)
